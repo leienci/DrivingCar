@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.test.drivingcar'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.test.drivingcar"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //json解析数据
+    implementation "com.google.code.gson:gson:2.8.9"
+    //图片加载框架
+    implementation "com.github.bumptech.glide:glide:4.13.2"
+    //视图绑定
+    implementation "androidx.databinding:viewbinding:8.0.1"
+    //协调者布局
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
+    //网络请求
+    implementation "com.squareup.okhttp3:okhttp:3.9.1"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.9.1"
+    //控制台日志
+    implementation "com.orhanobut:logger:2.2.0"
+    //轻量级存储
+    implementation 'com.tencent:mmkv-static:1.2.9'
+
+    implementation 'com.github.hackware1993:MagicIndicator:1.7.0' // for androidx
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+}

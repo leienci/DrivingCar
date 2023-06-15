@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ang_color_base">#ffffff</color> <!-- 默认主色调 -->
+    <color name="ang_color_base_gradual">#09A6FE</color> <!-- 默认主色调渐变色 -->
+    <color name="ang_color_base_gradual_l">#9909A6FE</color> <!-- 默认主色调渐变色 -->
+    <color name="ang_color_back">#F5F5F5</color> <!-- 默认背景颜色 -->
+    <color name="ang_color_line">#E5E5E5</color> <!-- 横线颜色 -->
+    <color name="ang_text_base">#23364e</color> <!-- 默认字体颜色 -->
+    <color name="ang_text_base_99">#9923364e</color> <!-- 默认字体颜色 -->
+    <color name="ang_text_sub">#666666</color> <!-- 默认字体颜色 -->
+    <color name="ang_text_bg_sub">#AFAFAF</color> <!-- 默认字体颜色 -->
+
+    <color name="ang_color_base_alpha">#9923364e</color> <!-- 默认主色调点击 -->
+    <color name="ang_color_base_gradual_alpha">#9980C3FF</color> <!-- 默认主色调渐变色点击 -->
+
+    <color name="ang_white">#FFFFFF</color> <!-- 白色 -->
+    <color name="ang_black">#000000</color> <!-- 黑色 -->
+    <color name="ang_transparent">#00000000</color> <!--透明颜色-->
+
+    <color name="ang_black_alpe">#44000000</color><!-- 悬浮阴影黑 -->
+    <color name="ang_black_view_alpe">#77000000</color><!-- View阴影黑 -->
+    <color name="ang_black_view_guide">#BB000000</color><!-- 引导 View 阴影黑 -->
+
+    <color name="ang_black_click">#E4E4E4</color> <!-- 按键黑 -->
+    <color name="ang_item_click">#11000000</color> <!-- item 点击（dialog只能设置透明） -->
+
+    <color name="default_shadow_color">#2a000000</color>
+    <color name="default_shadowback_color">#fff</color>
+    <color name="default_textColor">#000</color>
+
+    <color name="ang_EEEEEE">#EEEEEE</color>
+    <color name="ang_09A6FE">#09A6FE</color>
+    <color name="ang_9909A6FE">#9909A6FE</color>
+    <color name="ang_2009A6FE">#2009A6FE</color>
+    <color name="ang_094F99">#094F99</color>
+    <color name="ang_FE6063">#FE6063</color>
+    <color name="ang_99FE6063">#99FE6063</color>
+    <color name="ang_20FE6063">#20FE6063</color>
+    <color name="ang_CCCCCC">#CCCCCC</color>
+    <color name="ang_999999">#999999</color>
+    <color name="ang_666666">#666666</color>
+    <color name="ang_333333">#333333</color>
+    <color name="ang_222222">#222222</color>
+    <color name="ang_232323">#232323</color>
+    <color name="ang_888888">#888888</color>
+    <color name="ang_e5e5e5">#e5e5e5</color>
+    <color name="ang_EFF0F5">#EFF0F5</color>
+    <color name="ang_181508">#181508</color>
+    <color name="ang_FE2D2B">#FE2D2B</color>
+    <color name="ang_F7F7F7">#F7F7F7</color>
+    <color name="color_BBBDBF">#BBBDBF</color>
+    <color name="color_103067">#103067</color>
+
+    <color name="ang_F3F3F3">#F3F3F3</color>
+    <color name="ang_F6F6F6">#F6F6F6</color>
+    <color name="ang_F26107">#F26107</color>
+
+    <color name="ang_FFCD62">#FFCD62</color>
+    <color name="ang_FFA942">#FFA942</color>
+    <color name="ang_FBB218">#FBB218</color>
+    <color name="ang_dba672">#dba672</color>
+    <color name="ang_C7150D">#C7150D</color>
+    <color name="ang_B4370D">#B4370D</color>
+    <color name="ang_007AFF">#007AFF</color>
+    <color name="ang_556DCA">#556DCA</color>
+    <color name="ang_6387FA">#6387FA</color>
+    <color name="ang_F2D6A6">#F2D6A6</color>
+    <color name="ang_FEF3DD">#FEF3DD</color>
+
+
+    <color name="ang_4D9EF6">#4D9EF6</color>
+    <color name="ang_994D9EF6">#994D9EF6</color>
+    <color name="ang_504D9EF6">#504D9EF6</color>
+    <color name="ang_559BFE">#559BFE</color>
+    <color name="ang_0864E9">#0864E9</color>
+    <color name="ang_FD8D42">#FD8D42</color>
+    <color name="ang_39C868">#0AC247</color> <!-- 绿色 -->
+    <color name="ang_9939C868">#9939C868</color> <!-- 绿色 -->
+    <color name="ang_586084">#586084</color> <!-- 绿色 -->
+
+    <color name="ang_yellow">#F6E513</color> <!-- 黄色 -->
+    <color name="ang_red">#FE5959</color> <!-- 红色 -->
+    <color name="ang_blue">#33CAFF</color> <!-- 蓝色 -->
+    <color name="ang_orange">#FCAA06</color> <!-- 橙色 -->
+    <color name="ang_violet">#AC63DB</color> <!-- 紫色 -->
+    <color name="ang_green">#AED800</color> <!-- 绿色 -->
+</resources>
