@@ -25,6 +25,13 @@ public class TabMineFragment extends BaseFragment<FragmentMineBinding> {
 
     @Override
     protected void initData() {
+        mBinding.tvYszc.setOnClickListener(v -> {
+            WebViewActivity.start(instance, "https://www.cbg.cn/privacyPolicy.html");
+        });
+
+        mBinding.tvYhxy.setOnClickListener(v -> {
+            WebViewActivity.start(instance, "https://admin.qidian.qq.com/template/blue/website/agreement.html");
+        });
 
     }
 
