@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.test.drivingcar.base.BaseFragment;
-import com.test.drivingcar.databinding.FragmentHomeBinding;
 import com.test.drivingcar.databinding.FragmentSubjectBinding;
+import com.test.drivingcar.ui.video.VideoActivity;
 
 public class SubjectFragment extends BaseFragment<FragmentSubjectBinding> {
     private FragmentSubjectBinding mbinding;
@@ -33,7 +33,9 @@ public class SubjectFragment extends BaseFragment<FragmentSubjectBinding> {
 
     @Override
     protected void initData() {
-
+        mbinding.videoView.setOnClickListener(v -> {
+            VideoActivity.start(instance,"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4");
+        });
     }
 
     @Override
