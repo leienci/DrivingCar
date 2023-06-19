@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/rl_title"
@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:paddingLeft="@dimen/ang_dp_15"
             android:paddingRight="@dimen/ang_dp_15"
-            android:src="@mipmap/bm_back_light"/>
+            android:src="@mipmap/bm_back_light" />
 
         <TextView
             android:id="@+id/tv_title"
@@ -27,7 +27,7 @@
             android:layout_centerVertical="true"
             android:text="驾考怎么考"
             android:textColor="@color/ang_text_base"
-            android:textSize="@dimen/ang_dp_16"/>
+            android:textSize="@dimen/ang_dp_16" />
 
     </RelativeLayout>
 
@@ -78,7 +78,6 @@
             android:textSize="15dp" />
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -86,6 +85,34 @@
             android:text="0基础轻松拿证"
             android:textColor="@color/ang_text_base"
             android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="评论"
+            android:textColor="@color/ang_text_base"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="暂无评论"
+            android:textColor="@color/ang_text_base"
+            android:textSize="15dp" />
+
 
     </LinearLayout>
 
