@@ -12,17 +12,17 @@ import android.view.animation.OvershootInterpolator;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.orhanobut.logger.Logger;
 import com.test.drivingcar.R;
 import com.test.drivingcar.base.BaseFragment;
 import com.test.drivingcar.databinding.FragmentHomeBinding;
 import com.test.drivingcar.model.CityBean;
-import com.test.drivingcar.ui.adapter.ViewPage2Adapter;
 import com.test.drivingcar.ui.dialog.CarTypeDialog;
 import com.test.drivingcar.utils.HttpUtils;
 import com.test.drivingcar.utils.JsonUtils;
 import com.test.drivingcar.utils.MmkvUtil;
+import com.test.drivingcar.ui.adapter.ViewPage2Adapter;
 import com.test.drivingcar.utils.ScaleTransitionPagerTitleView;
+import com.orhanobut.logger.Logger;
 
 import net.lucode.hackware.magicindicator.FragmentContainerHelper;
 import net.lucode.hackware.magicindicator.MagicIndicator;
@@ -53,6 +53,7 @@ public class TabHomeFragment extends BaseFragment<FragmentHomeBinding> {
     protected void initView(Bundle savedInstanceState) {
         initViewPage();
         initCarType();
+
     }
 
     @Override
@@ -134,16 +135,15 @@ public class TabHomeFragment extends BaseFragment<FragmentHomeBinding> {
             super.onPageSelected(position);
         }
 
-
         @Override
         public void onPageScrollStateChanged(int state) {
             super.onPageScrollStateChanged(state);
         }
-
-
     };
 
-    /*获取城市定位*/
+    /**
+     * 获取城市定位
+     */
     private void httpCity() {
         HttpUtils.getInstance().url("https://whois.pconline.com.cn/ipJson.jsp?json=true")
                 .post(new TreeMap<>()).start(new HttpUtils.BaseCallBack() {
@@ -159,8 +159,10 @@ public class TabHomeFragment extends BaseFragment<FragmentHomeBinding> {
                         if (cityBean != null) {
                             mBinding.tvCity.setText(cityBean.getCity());
                         }
+
                     }
                 });
+
     }
 
     private void initCarType() {

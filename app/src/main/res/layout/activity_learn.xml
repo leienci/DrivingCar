@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/ang_dp_15"
+                android:paddingRight="@dimen/ang_dp_15"
+                android:src="@mipmap/bm_back_light" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ang_dp_30"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_333_c_s"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_answer"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_pra_tab_left_s"
+                    android:gravity="center"
+                    android:text="答题模式"
+                    android:textColor="@color/white_base_text"
+                    android:textSize="@dimen/ang_dp_14" />
+
+                <TextView
+                    android:id="@+id/tv_look"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_pra_tab_right_s"
+                    android:gravity="center"
+                    android:text="背题模式"
+                    android:textColor="@color/white_base_text"
+                    android:textSize="@dimen/ang_dp_14" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/mViewPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_bar"
+            android:paddingBottom="@dimen/ang_dp_50" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="@dimen/ang_dp_50"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        tools:ignore="MissingPrefix">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/ang_color_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ang_dp_50">
+
+
+            <TextView
+                android:id="@+id/tv_col"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ang_dp_50"
+                android:drawableLeft="@drawable/ic_practice_sc"
+                android:drawablePadding="@dimen/ang_dp_5"
+                android:gravity="center"
+                android:paddingLeft="@dimen/ang_dp_10"
+                android:paddingRight="@dimen/ang_dp_10"
+                android:text="收藏" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/icon_skill_right"
+                    android:drawablePadding="@dimen/ang_dp_5"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/ang_333333"
+                    android:textSize="@dimen/ang_dp_15" />
+
+                <TextView
+                    android:id="@+id/tv_wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/ang_dp_20"
+                    android:drawableLeft="@mipmap/icon_skill_wrong"
+                    android:drawablePadding="@dimen/ang_dp_5"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/ang_333333"
+                    android:textSize="@dimen/ang_dp_15" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_index"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/ang_dp_15"
+                android:drawableLeft="@mipmap/icon_cascades"
+                android:gravity="center"
+                android:text="1234"
+                android:textColor="@color/ang_333333"
+                android:textSize="@dimen/ang_dp_14" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/ang_color_line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/ang_dp_8"
+            android:paddingRight="@dimen/ang_dp_8" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

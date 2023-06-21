@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/ang_dp_8"
+        android:paddingBottom="@dimen/ang_dp_50">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ang_dp_16"
+            android:layout_marginRight="@dimen/ang_dp_16"
+            android:text="这里是题目"
+            android:textColor="@color/ang_text_base"
+            android:textSize="@dimen/ang_dp_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/ang_dp_10" />
+
+        <com.test.drivingcar.ui.view.ViewLearnChoose
+            android:id="@+id/mViewLearnChoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ang_dp_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ang_dp_16"
+            android:text="答案"
+            android:textColor="@color/ang_333333"
+            android:textSize="@dimen/ang_dp_15" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ang_dp_20"
+            android:text="题目解析"
+            android:textColor="@color/ang_text_base"
+            android:textSize="@dimen/ang_dp_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ang_dp_16"
+            android:layout_marginRight="@dimen/ang_dp_16"
+            android:text="内容"
+            android:textColor="@color/ang_999999"
+            android:textSize="@dimen/ang_dp_15" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

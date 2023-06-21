@@ -10,19 +10,19 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 
-import com.test.drivingcar.base.BaseActivity;
-import com.test.drivingcar.databinding.FragmentVideoPlayerBinding;
 import com.shuyu.gsyvideoplayer.GSYVideoManager;
 import com.shuyu.gsyvideoplayer.builder.GSYVideoOptionBuilder;
 import com.shuyu.gsyvideoplayer.listener.GSYSampleCallBack;
 import com.shuyu.gsyvideoplayer.listener.LockClickListener;
 import com.shuyu.gsyvideoplayer.utils.OrientationUtils;
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
+import com.test.drivingcar.base.BaseActivity;
+import com.test.drivingcar.databinding.FragmentVideoPlayerBinding;
 
 public class VideoActivity extends BaseActivity<FragmentVideoPlayerBinding> {
 
     private static Intent intent;
-    private FragmentVideoPlayerBinding mBinding;
+    private  FragmentVideoPlayerBinding mBinding;
     private StandardGSYVideoPlayer detailPlayer;
     private OrientationUtils orientationUtils;
     private GSYVideoOptionBuilder gsyVideoOption;

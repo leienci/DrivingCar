@@ -35,7 +35,7 @@
                 android:textSize="15dp" />
 
             <Button
-                android:id="@+id/video_view"
+                android:id="@+id/btn_look"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginLeft="20dp"

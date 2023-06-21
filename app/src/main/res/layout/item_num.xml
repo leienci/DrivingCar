@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/ang_dp_8"
+        android:background="@drawable/learn_topic_num_nor"
+        android:gravity="center"
+        android:text="1234"
+        android:textSize="@dimen/ang_dp_14" />
+
+</RelativeLayout>

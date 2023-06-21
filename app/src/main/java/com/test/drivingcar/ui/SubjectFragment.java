@@ -1,5 +1,6 @@
 package com.test.drivingcar.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,7 +8,6 @@ import android.view.ViewGroup;
 
 import com.test.drivingcar.base.BaseFragment;
 import com.test.drivingcar.databinding.FragmentSubjectBinding;
-import com.test.drivingcar.ui.video.VideoActivity;
 
 public class SubjectFragment extends BaseFragment<FragmentSubjectBinding> {
     private FragmentSubjectBinding mbinding;
@@ -28,14 +28,18 @@ public class SubjectFragment extends BaseFragment<FragmentSubjectBinding> {
 
     @Override
     protected void initView(Bundle savedInstanceState) {
+        mbinding.btnLook.setOnClickListener(v -> {
+            startActivity(new Intent(instance, VideoPlayActivity.class).putExtra("videoUrl","https://whois.pconline.com.cn/ipJson.jsp?json=true"));
+        });
+        mbinding.slPractice.setOnClickListener(v -> {
+          startActivity(new Intent(instance,LearnActivity.class));
+        });
 
     }
 
     @Override
     protected void initData() {
-        mbinding.videoView.setOnClickListener(v -> {
-            VideoActivity.start(instance,"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4");
-        });
+
     }
 
     @Override

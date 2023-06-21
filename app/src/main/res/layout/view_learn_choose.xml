@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/ang_dp_15"
+        android:paddingRight="@dimen/ang_dp_15"
+        android:paddingTop="@dimen/ang_dp_5"
+        android:paddingBottom="@dimen/ang_dp_5">
+
+        <ImageView
+            android:id="@+id/item_a_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/bm_practise_a_n_day"/>
+
+        <TextView
+            android:id="@+id/item_a_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ang_dp_15"
+            android:textColor="@color/ang_text_base"
+            android:textSize="@dimen/ang_dp_16"
+            android:text="正确"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/ang_dp_15"
+        android:paddingRight="@dimen/ang_dp_15"
+        android:paddingTop="@dimen/ang_dp_5"
+        android:paddingBottom="@dimen/ang_dp_5">
+
+        <ImageView
+            android:id="@+id/item_b_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/bm_practise_b_n_day"/>
+
+        <TextView
+            android:id="@+id/item_b_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ang_dp_15"
+            android:textColor="@color/ang_text_base"
+            android:textSize="@dimen/ang_dp_16"
+            android:text="正确"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/ang_dp_15"
+        android:paddingRight="@dimen/ang_dp_15"
+        android:paddingTop="@dimen/ang_dp_5"
+        android:paddingBottom="@dimen/ang_dp_5">
+
+        <ImageView
+            android:id="@+id/item_c_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/bm_practise_c_n_day"/>
+
+        <TextView
+            android:id="@+id/item_c_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ang_dp_15"
+            android:textColor="@color/ang_text_base"
+            android:textSize="@dimen/ang_dp_16"
+            android:text="正确"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/ang_dp_15"
+        android:paddingRight="@dimen/ang_dp_15"
+        android:paddingTop="@dimen/ang_dp_5"
+        android:paddingBottom="@dimen/ang_dp_5">
+
+        <ImageView
+            android:id="@+id/item_d_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/bm_practise_d_n_day"/>
+
+        <TextView
+            android:id="@+id/item_d_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ang_dp_15"
+            android:textColor="@color/ang_text_base"
+            android:textSize="@dimen/ang_dp_16"
+            android:text="正确"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/item_mult_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ang_dp_42"
+        android:layout_marginLeft="@dimen/ang_dp_30"
+        android:layout_marginRight="@dimen/ang_dp_30"
+        android:layout_marginTop="@dimen/ang_dp_20"
+        android:textSize="@dimen/ang_dp_16"
+        android:text="确定"/>
+</LinearLayout>
